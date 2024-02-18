@@ -30,12 +30,16 @@ function triangle(num1, val1, num2, val2) {
 	fill_dict(num1, val1);
 	fill_dict(num2, val2);
 
-	if (check_angle(num1, val1, num2, val2)){
-		console.log("The angle is not correct");
+	if (check(num1, val1, num2, val2)){
+		console.log("The value is not correct");
 		return "failed"
 	}
 
 	if (dict["leg"] != undefined && dict["hypotenuse"] != undefined){
+		if (dict["leg"] >= dict["hypotenuse"]){
+			console.log("leg must be smaller than hypotenuse");
+			return "failed"
+		}
 		leg_and_hypotenuse();
 	}
 	else if (val1 == "leg" && val2 == "leg"){
@@ -86,14 +90,24 @@ function fill_dict(num, val) {
 	}
 }
 
-function check_angle(num1, val1, num2, val2) {
+function check(num1, val1, num2, val2) {
 	if (["angle", "adjacent angle", "opposite angle"].includes(val1)){
 		if(num1 >= 90 || num1 <= 0){
 			return 1;
 		}
 	}
+	else if (["leg", "hypotenuse"].includes(val1)){
+		if (num1 <= 0){
+			return 1;
+		}
+	}
 	if (["angle", "adjacent angle", "opposite angle"].includes(val2)){
 		if(num2 >= 90 || num2 <= 0){
+			return 1;
+		}
+	}
+	else if (["leg", "hypotenuse"].includes(val2)){
+		if (num2 <= 0){
 			return 1;
 		}
 	}
