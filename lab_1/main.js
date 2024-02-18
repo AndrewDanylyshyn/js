@@ -13,8 +13,6 @@ console.log("adjacent angle")
 console.log("opposite angle")
 console.log("angle")
 console.log("Значення кутів потрібно задавати в межах від 1 до 89 включно")
-console.log("Приклад запиту:")
-console.log("triangle(60, opposite angle, 5, leg);")
 
 function triangle(num1, val1, num2, val2) {
 	dict = {"leg": undefined,
