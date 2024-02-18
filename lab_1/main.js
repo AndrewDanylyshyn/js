@@ -31,7 +31,8 @@ function triangle(num1, val1, num2, val2) {
 	fill_dict(num2, val2);
 
 	if (check_angle(num1, val1, num2, val2)){
-		return "The angle is not correct";
+		console.log("The angle is not correct");
+		return "failed"
 	}
 
 	if (dict["leg"] != undefined && dict["hypotenuse"] != undefined){
@@ -50,7 +51,8 @@ function triangle(num1, val1, num2, val2) {
 		hypotenuse_and_angle();
 	}
 	else{
-		return "unknown arguments";
+		console.log("unknown arguments");
+		return "failed"
 	}
 	output();
 	return "success";
