@@ -30,9 +30,10 @@ function triangle(num1, val1, num2, val2) {
 	fill_dict(num1, val1);
 	fill_dict(num2, val2);
 
-	if (check(num1, val1, num2, val2)){
-		console.log("The value is not correct");
-		return "failed"
+	let message = check(num1, val1, num2, val2);
+	if(message != "ok"){
+		console.log(message);
+		return "failed";
 	}
 
 	if (dict["leg"] != undefined && dict["hypotenuse"] != undefined){
@@ -92,26 +93,33 @@ function fill_dict(num, val) {
 
 function check(num1, val1, num2, val2) {
 	if (["angle", "adjacent angle", "opposite angle"].includes(val1)){
-		if(num1 >= 90 || num1 <= 0){
-			return 1;
+		if(num1 >= 90){
+			return "Angle is bigger or equal than 90";
+		}
+		else if (num1 <= 1){
+			return "Angle is smaller than 1";
 		}
 	}
 	else if (["leg", "hypotenuse"].includes(val1)){
 		if (num1 <= 0){
-			return 1;
+			return "Size of side is smaller or equal than 0";
 		}
 	}
 	if (["angle", "adjacent angle", "opposite angle"].includes(val2)){
-		if(num2 >= 90 || num2 <= 0){
-			return 1;
+		if(num2 >= 90){
+			return "Angle is bigger or equal than 90";
+		}
+		else if (num2 <= 1){
+			return "Angle is smaller than 1";
 		}
 	}
 	else if (["leg", "hypotenuse"].includes(val2)){
 		if (num2 <= 0){
-			return 1;
+			return "Size of side is smaller or equal than 0";
 		}
 	}
-	return 0;
+
+	return 'ok';
 }
 
 function degrees_to_radians(degrees)
