@@ -59,6 +59,11 @@ function triangle(num1, val1, num2, val2) {
 		console.log("unknown arguments");
 		return "failed"
 	}
+
+	if (output_dict['alpha'] <= 0.000001 || output_dict['beta'] <= 0.00001){
+		console.log("one of angles of triangle is too small. Triangle is impossible");
+		return "failed";
+	}
 	output();
 	return "success";
 }
@@ -92,13 +97,21 @@ function fill_dict(num, val) {
 }
 
 function check(num1, val1, num2, val2) {
+	if (typeof num1 !== "number"){
+		return "first value must be a number";
+	}
+	if (typeof num2 !== "number"){
+		return "third value must be a number";
+	}
+	
 	if (["angle", "adjacent angle", "opposite angle"].includes(val1)){
 		if(num1 >= 90){
 			return "Angle is bigger or equal than 90";
 		}
-		else if (num1 <= 1){
-			return "Angle is smaller than 1";
+		else if (num1 <= 0.000001){
+			return "Angle is too small";
 		}
+
 	}
 	else if (["leg", "hypotenuse"].includes(val1)){
 		if (num1 <= 0){
@@ -109,9 +122,10 @@ function check(num1, val1, num2, val2) {
 		if(num2 >= 90){
 			return "Angle is bigger or equal than 90";
 		}
-		else if (num2 <= 1){
-			return "Angle is smaller than 1";
+		else if (num2 <= 0.000001){
+			return "Angle is too small";
 		}
+
 	}
 	else if (["leg", "hypotenuse"].includes(val2)){
 		if (num2 <= 0){
