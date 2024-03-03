@@ -1,6 +1,6 @@
 console.log("Good bye (some name) prints when name is starts with letter J.");
 console.log("Good morning (some name) prints when name contains 2 or more vowels.");
-console.log("Good morning (some name) prints when previous statements are false.");
+console.log("Hello (some name) prints when previous statements are false.");
 
 let A = {};
 A.names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim"];
