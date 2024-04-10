@@ -71,8 +71,8 @@ var truck2 = new Truck("Yellow", 6000, 55, "Kenworth", "T680");
 truck1.AssignDriver("Andrew Danylyshyn", true, 5);
 truck2.AssignDriver("Andrew Danylyshyn", false, 8);
 
-truck1.trip(); // Output: Driver Jane Doe drives at night and has 5 years of experience
-truck2.trip(); // Output: Driver Bob Smith does not drive at night and has 8 years of experience
+truck1.trip(); 
+truck2.trip();
 
 
 // 1.2.12
