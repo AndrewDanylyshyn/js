@@ -1,0 +1,108 @@
+{
+	"Assault rifles": {
+		"id": 0,
+		"name": "Assault rifles",
+		"shortname": "AR",
+		"notes": "",
+		"wares": [
+			{
+				"id": 0,
+				"name": "M16",
+				"shortname": "M16",
+				"description": "The M16 rifle (officially designated Rifle, Caliber 5.56 mm, M16) is a family of military rifles adapted from the ArmaLite AR-15 rifle for the United States military. The original M16 rifle was a 5.56×45mm automatic rifle with a 20-round magazine.",
+				"price": 12,
+				"url": "M16.jpg"
+			},
+						{
+				"id": 1,
+				"name": "Colt AR-15",
+				"shortname": "AR-15",
+				"description": "The Colt AR-15 is a lightweight, magazine-fed, gas-operated semi-automatic rifle. It is a semi-automatic version of the M16 rifle sold for the civilian and law enforcement markets in the United States. The AR in AR-15 stands for ArmaLite rifle, after the company that developed it in the 1950s.[1][2][failed verification] Colt's Manufacturing Company currently owns the AR-15 trademark, which is used exclusively for its line of semi-automatic AR-15 rifles.",
+				"price": 12,
+				"url": "AR-15.jpg"
+			},
+						{
+				"id": 2,
+				"name": "M4-WAC-47",
+				"shortname": "M4-WAC-47",
+				"description": "The M4-WAC-47 is a Ukrainian-made assault rifle created by UkrOboronProm and American company Aeroscraft (a division of Worldwide Aeros Corporation). Based on the Colt AR-15 platform, it can fire the Soviet standard 7.62×39mm or the NATO standard 5.56×45mm cartridges by changing the barrel and other parts. It was tested within different sections of the Ukrainian Ground Forces and Border Guard, with testing estimated to have been completed in late April, 2018.",
+				"price": 12,
+				"url": "M4-47.jpg"
+			},
+						{
+				"id": 3,
+				"name": "AK-47",
+				"shortname": "AK",
+				"description": "The AK-47, officially known as the Avtomat Kalashnikova (Russian: Автомат Калашникова, lit. 'Kalashnikov's automatic [rifle]'; also known as the Kalashnikov or just AK), is a gas-operated assault rifle that is chambered for the 7.62×39mm cartridge. Developed in the Soviet Union by Russian small-arms designer Mikhail Kalashnikov, it is the originating firearm of the Kalashnikov (or AK) family of rifles. After more than eight decades since its creation, the AK-47 model and its variants remain one of the most popular and widely used firearms in the world.",
+				"price": 12,
+				"url": "AK-47.png"
+			}
+		]
+	},
+
+	"Grenades": {
+		"id": 0,
+		"name": "Grenades",
+		"shortname": "Grenades",
+		"notes": "",
+		"wares": [
+			{
+				"id": 0,
+				"name": "РГД-5",
+				"shortname": "РГД",
+				"description": "Ручна граната РГД-5 («Ручна граната дистанційна», індекс ГРАУ — 57-Г-717) — протипіхотна уламкова ручна граната дистанційної дії, наступального типу. Основне призначення гранати РГД-5 — ураження особового складу супротивника уламками корпусу.",
+				"price": 12,
+				"url": "Rgd_5.jpeg"
+			},
+						{
+				"id": 1,
+				"name": "Ф-1",
+				"shortname": "Ф-1",
+				"description": "Ручна осколкова граната Ф-1 (індекс ГРАУ — 57-Г-721) — ручна граната дистанційної дії, призначена для ураження живої сили противника в оборонному бою. Кидати гранату можна з різних положень і лише з-за укриття, з бронетранспортера або танку. Оскільки Ф-1 є гранатою оборонної дії, то радіус ураження осколками значно перевищує радіус можливого кидка гранати.",
+				"price": 12,
+				"url": "F1.jpg"
+			},
+						{
+				"id": 2,
+				"name": "РГН",
+				"shortname": "РГН",
+				"description": "РГН (рос. Ручная Граната Наступательная, ручна граната наступальна) (Індекс ГРАУ — 7Г21) — протипіхотна осколкова ударно-дистанційна граната. Призначена для ураження живої сили в бою. Під час вибуху граната утворює 220—300 осколків середньою вагою 0,42 грам з початковою швидкістю розльоту 700 м/с, площа розльоту осколків складає 95—96 м². Радіус ураження осколками гранати — 15 м, радіус можливого ураження — 35 м.",
+				"price": 12,
+				"url": "RGN.jpg"
+			},
+						{
+				"id": 3,
+				"name": "РГО",
+				"shortname": "РГО",
+				"description": "РГО (рос. Ручная Граната Оборонительная, ручна граната оборонна) — ручна протипіхотна оборонна ударно-дистанційна граната. Індекс ГРАУ - 7Г22. Граната призначена для ураження живої сили в оборонному бою. До цілі граната дістається тільки за рахунок кидка рукою солдата. Радіус ураження осколками гранати — 50 м, радіус можливого ураження — 100 м. За ТТХ в цілому аналогічна гранаті Ф-1, але відрізняється від неї застосуванням комбінованого ударно-дистанційного підривника.",
+				"price": 12,
+				"url": "RGO.jpg"
+			}
+		]
+	},
+
+	"Ammunition": {
+		"id": 0,
+		"name": "Ammunition",
+		"shortname": "Ammo",
+		"notes": "",
+		"wares": [
+			{
+				"id": 0,
+				"name": "7,62×39 мм",
+				"shortname": "7,62×39",
+				"description": "Патрон 7,62×39 мм — проміжний набій радянського походження. Широке застосування патрон отримав завдяки світовому поширенню радянських гвинтівок зразка СКС і АК-47, а також ручних кулеметів РКД і РКК.",
+				"price": 12,
+				"url": "7.62x39.jpg"
+			},
+						{
+				"id": 1,
+				"name": "5,56×45 мм НАТО",
+				"shortname": "5,56×45",
+				"description": "5,56×45 мм НАТО (офіційна номенклатура НАТО 5,56, але часто вимовляється як «п'ять-п'ятдесят-шість») — сімейство безфланцевих набоїв без оправи з вузьким горлечком, розроблене наприкінці 1970-х років у Бельгії компанією FN Herstal.[1] Складається з набоїв SS109, L110 і SS111. 28 жовтня 1980 року відповідно до стандарту STANAG 4172, були стандартизовані як другий стандартний службовий нарізний набій для сил НАТО, а також багатьох країн, що не входять до НАТО.",
+				"price": 12,
+				"url": "5.56.jpg"
+			}
+		]
+	}
+}
