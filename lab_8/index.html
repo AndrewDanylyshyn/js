@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="nav-toggle" id="nav-toggle">Menu</button>
+    <nav class="nav-menu" id="nav-menu">
+        <div class="nav-item">
+            <img src="no_communism.jpg" alt="Image 1">
+            <p>Комуняку</p>
+        </div>
+        <div class="nav-item">
+            <img src="no_communism.jpg" alt="Image 2">
+            <p>на</p>
+        </div>
+        <div class="nav-item">
+            <img src="no_communism.jpg" alt="Image 3">
+            <p>гілляку</p>
+        </div>
+        <div class="nav-item">
+            <img src="no_communism.jpg" alt="Image 4">
+            <p>!</p>
+        </div>
+    </nav>
+
+        <!-- Slideshow Container -->
+    <div class="slideshow-nav-container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img.jpg" style="width:100%">
+                <div class="text">Caption 1</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img.jpg" style="width:100%">
+                <div class="text">Caption 2</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img.jpg" style="width:100%">
+                <div class="text">Caption 3</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <!-- Dots/Bullets -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+    <div class="large-img">
+      <img src="RGN.jpg">
+      <img src="RGN.jpg">
+      <img src="RGN.jpg">
+    </div>
+
+    <div class="medium-img">
+      <img src="F1.jpg">
+      <img src="F1.jpg">
+      <img src="F1.jpg">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
